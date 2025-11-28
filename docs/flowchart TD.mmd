@@ -1,0 +1,66 @@
+flowchart TD
+    Start(["User Logged In"])
+    ActiveSession["Active Session"]
+    MonitorActivity["Monitor User Activity"]
+    
+    ActivityDetected{"Activity Detected?"}
+    ResetTimer["Reset Inactivity Timer"]
+    
+    CheckTimeout{"Timeout Threshold Reached?"}
+    WarningThreshold{"Warning Threshold?"}
+    
+    ShowWarning["Show Session Expiry Warning"]
+    DisplayCountdown["Display Countdown Timer"]
+    
+    UserResponds{"User Responds?"}
+    ClickContinue["Click Continue Session"]
+    ExtendSession["Extend Session"]
+    LogActivity["Log Session Extension"]
+    
+    CountdownExpires{"Countdown Expires?"}
+    
+    InitiateLogout["Initiate Auto Logout"]
+    ClearSession["Clear Session Data"]
+    ClearTokens["Invalidate Auth Tokens"]
+    LogTimeout["Log Timeout Event"]
+    
+    RedirectLogin["Redirect to Login Page"]
+    ShowTimeoutMsg["Show Timeout Message"]
+    
+    EndActive(["Session Active"])
+    EndLogout(["Session Ended"])
+
+    Start --> ActiveSession
+    ActiveSession --> MonitorActivity
+    MonitorActivity --> ActivityDetected
+    
+    ActivityDetected -->|Yes| ResetTimer
+    ResetTimer --> MonitorActivity
+    
+    ActivityDetected -->|No| CheckTimeout
+    CheckTimeout -->|No| MonitorActivity
+    
+    CheckTimeout -->|Yes| WarningThreshold
+    WarningThreshold -->|No| InitiateLogout
+    
+    WarningThreshold -->|Yes| ShowWarning
+    ShowWarning --> DisplayCountdown
+    DisplayCountdown --> UserResponds
+    
+    UserResponds -->|Yes| ClickContinue
+    ClickContinue --> ExtendSession
+    ExtendSession --> LogActivity
+    LogActivity --> ResetTimer
+    
+    UserResponds -->|No| CountdownExpires
+    CountdownExpires -->|No| DisplayCountdown
+    CountdownExpires -->|Yes| InitiateLogout
+    
+    InitiateLogout --> ClearSession
+    ClearSession --> ClearTokens
+    ClearTokens --> LogTimeout
+    LogTimeout --> RedirectLogin
+    RedirectLogin --> ShowTimeoutMsg
+    ShowTimeoutMsg --> EndLogout
+    
+    ResetTimer --> EndActive

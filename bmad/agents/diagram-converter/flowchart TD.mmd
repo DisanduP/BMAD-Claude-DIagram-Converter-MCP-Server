@@ -1,0 +1,18 @@
+flowchart TD
+    Start(["Start"])
+    CheckStock["Check Stock Levels"]
+    IdentifyLow["Identify Low Stock Items"]
+    GenerateOrder["Generate Restock Order"]
+    SupplierProcess["Supplier Processes Order"]
+    IsDelivered{"Is Restock Delivered?"}
+    StockUpdated(["Stock Updated"])
+    PendingDelivery(["Pending Delivery"])
+
+    Start --> CheckStock
+    CheckStock --> IdentifyLow
+    IdentifyLow --> GenerateOrder
+    GenerateOrder --> SupplierProcess
+    SupplierProcess --> IsDelivered
+    IsDelivered -->|Yes| StockUpdated
+    IsDelivered -->|No| PendingDelivery
+    PendingDelivery --> IsDelivered

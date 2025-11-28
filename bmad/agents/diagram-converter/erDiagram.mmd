@@ -1,0 +1,106 @@
+erDiagram
+    USER ||--o{ POST : creates
+    USER ||--o{ COMMENT : writes
+    USER ||--o{ USER_ROLE : has
+    ROLE ||--o{ USER_ROLE : assigned_to
+    POST ||--o{ COMMENT : has
+    POST ||--o{ POST_TAG : tagged_with
+    TAG ||--o{ POST_TAG : applied_to
+    POST ||--o{ POST_CATEGORY : belongs_to
+    CATEGORY ||--o{ POST_CATEGORY : contains
+    CATEGORY ||--o| CATEGORY : parent_of
+    POST ||--o{ MEDIA : includes
+    USER ||--o{ MEDIA : uploads
+
+    USER {
+        int id PK
+        string username
+        string email
+        string password_hash
+        string display_name
+        string avatar_url
+        text bio
+        datetime created_at
+        datetime updated_at
+        boolean is_active
+    }
+
+    ROLE {
+        int id PK
+        string name
+        string description
+        json permissions
+    }
+
+    USER_ROLE {
+        int id PK
+        int user_id FK
+        int role_id FK
+        datetime assigned_at
+    }
+
+    POST {
+        int id PK
+        int author_id FK
+        string title
+        string slug
+        text excerpt
+        text content
+        string status
+        datetime published_at
+        datetime created_at
+        datetime updated_at
+        int view_count
+        boolean is_featured
+    }
+
+    COMMENT {
+        int id PK
+        int post_id FK
+        int user_id FK
+        int parent_id FK
+        text content
+        string status
+        datetime created_at
+        datetime updated_at
+    }
+
+    TAG {
+        int id PK
+        string name
+        string slug
+        text description
+    }
+
+    POST_TAG {
+        int id PK
+        int post_id FK
+        int tag_id FK
+    }
+
+    CATEGORY {
+        int id PK
+        int parent_id FK
+        string name
+        string slug
+        text description
+        int sort_order
+    }
+
+    POST_CATEGORY {
+        int id PK
+        int post_id FK
+        int category_id FK
+    }
+
+    MEDIA {
+        int id PK
+        int user_id FK
+        int post_id FK
+        string filename
+        string file_path
+        string file_type
+        int file_size
+        string alt_text
+        datetime uploaded_at
+    }

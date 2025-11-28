@@ -1,0 +1,516 @@
+<mxfile host="app.diagrams.net" modified="2024-01-15T10:00:00.000Z" agent="Mozilla/5.0" version="22.1.5" type="device">
+  <diagram name="QMS Non-Conformance Handling Flow" id="qms-non-conformance-flow">
+    <mxGraphModel dx="1434" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Start -->
+        <mxCell id="start" value="Issue Detected" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="440" y="20" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Identify NC -->
+        <mxCell id="identifyNC" value="Identify Non-Conformance" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="415" y="90" width="170" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Classify NC -->
+        <mxCell id="classifyNC" value="Classify NC Severity" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="430" y="160" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Severity Level -->
+        <mxCell id="severityLevel" value="Severity Level?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="430" y="230" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Critical NC -->
+        <mxCell id="criticalNC" value="Critical NC - Immediate Action" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="220" y="320" width="170" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Major NC -->
+        <mxCell id="majorNC" value="Major NC - Priority Action" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="415" y="320" width="170" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Minor NC -->
+        <mxCell id="minorNC" value="Minor NC - Standard Process" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="610" y="320" width="170" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Log NC -->
+        <mxCell id="logNC" value="Log NC in QMS System" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="425" y="400" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Assign NC Number -->
+        <mxCell id="assignNCNumber" value="Assign NC Reference Number" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="410" y="470" width="180" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Notify Stakeholders -->
+        <mxCell id="notifyStakeholders" value="Notify Relevant Stakeholders" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="410" y="540" width="180" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Document Evidence -->
+        <mxCell id="documentEvidence" value="Document Evidence &amp; Details" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="410" y="610" width="180" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Initiate RCA -->
+        <mxCell id="initiateRCA" value="Initiate Root Cause Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="690" width="180" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Gather Data -->
+        <mxCell id="gatherData" value="Gather Related Data" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="425" y="760" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Analyze Cause -->
+        <mxCell id="analyzeCause" value="Analyze Potential Causes" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="420" y="830" width="160" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Apply 5 Why -->
+        <mxCell id="apply5Why" value="Apply 5-Why Analysis" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="425" y="900" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Fishbone Diagram -->
+        <mxCell id="fishboneDiagram" value="Create Fishbone Diagram" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="420" y="970" width="160" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Root Cause Identified -->
+        <mxCell id="rootCauseIdentified" value="Is Root Cause Identified?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1050" width="200" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Extend Analysis -->
+        <mxCell id="extendAnalysis" value="Extend Analysis Period" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1060" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Max Analysis Time -->
+        <mxCell id="maxAnalysisTime" value="Max Analysis Time Reached?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="155" y="1140" width="200" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Escalate RCA -->
+        <mxCell id="escalateRCA" value="Escalate to Senior Team" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1250" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- End Escalated -->
+        <mxCell id="endEscalated" value="Escalated for Review" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1320" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Document Root Cause -->
+        <mxCell id="documentRootCause" value="Document Root Cause" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1170" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Validate Root Cause -->
+        <mxCell id="validateRootCause" value="Validate Root Cause" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1240" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Develop CAPA -->
+        <mxCell id="developCAPA" value="Develop Corrective Action Plan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="405" y="1320" width="190" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Assign Owner -->
+        <mxCell id="assignOwner" value="Assign Action Owner" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1390" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Set Deadline -->
+        <mxCell id="setDeadline" value="Set Completion Deadline" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1460" width="160" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Allocate Resources -->
+        <mxCell id="allocateResources" value="Allocate Resources" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1530" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Approve CAPA -->
+        <mxCell id="approveCAPA" value="CAPA Plan Approved?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="415" y="1600" width="170" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Revise CAPA -->
+        <mxCell id="reviseCAPA" value="Revise CAPA Plan" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="640" y="1610" width="130" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Implement CA -->
+        <mxCell id="implementCA" value="Implement Corrective Action" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="410" y="1700" width="180" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Monitor Progress -->
+        <mxCell id="monitorProgress" value="Monitor Implementation Progress" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="395" y="1770" width="210" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Document Actions -->
+        <mxCell id="documentActions" value="Document Actions Taken" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="420" y="1840" width="160" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Initiate Verification -->
+        <mxCell id="initiateVerification" value="Initiate Verification" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="430" y="1920" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Review Evidence -->
+        <mxCell id="reviewEvidence" value="Review Implementation Evidence" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1990" width="200" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Test Effectiveness -->
+        <mxCell id="testEffectiveness" value="Test Corrective Action" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="425" y="2060" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- CA Effective -->
+        <mxCell id="caEffective" value="Is Corrective Action Effective?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="385" y="2130" width="230" height="70" as="geometry" />
+        </mxCell>
+        
+        <!-- Identify Gaps -->
+        <mxCell id="identifyGaps" value="Identify Gaps" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="180" y="2145" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Revise CA Plan -->
+        <mxCell id="reviseCAPlan" value="Revise Corrective Action" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="165" y="2215" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Document Verification -->
+        <mxCell id="documentVerification" value="Document Verification Results" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2145" width="180" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Update Procedures -->
+        <mxCell id="updateProcedures" value="Update Procedures if Needed" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2215" width="180" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Share Lessons -->
+        <mxCell id="shareLessons" value="Share Lessons Learned" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="655" y="2285" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Close NC -->
+        <mxCell id="closeNC" value="Close Non-Conformance" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2355" width="160" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Archive Records -->
+        <mxCell id="archiveRecords" value="Archive NC Records" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="655" y="2425" width="150" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Generate Report -->
+        <mxCell id="generateReport" value="Generate NC Closure Report" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="640" y="2495" width="180" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Notify Closure -->
+        <mxCell id="notifyClosure" value="Notify Stakeholders of Closure" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="630" y="2565" width="200" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- End Closed -->
+        <mxCell id="endClosed" value="NC Closed" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="670" y="2635" width="120" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- EDGES -->
+        <!-- Start to Identify NC -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="start" target="identifyNC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Identify NC to Classify NC -->
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="identifyNC" target="classifyNC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Classify NC to Severity Level -->
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="classifyNC" target="severityLevel">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Severity Level to Critical NC -->
+        <mxCell id="e4" value="Critical" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="severityLevel" target="criticalNC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Severity Level to Major NC -->
+        <mxCell id="e5" value="Major" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="severityLevel" target="majorNC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Severity Level to Minor NC -->
+        <mxCell id="e6" value="Minor" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="severityLevel" target="minorNC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Critical NC to Log NC -->
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="criticalNC" target="logNC">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="380" />
+              <mxPoint x="500" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Major NC to Log NC -->
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="majorNC" target="logNC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Minor NC to Log NC -->
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="minorNC" target="logNC">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="695" y="380" />
+              <mxPoint x="500" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Log NC to Assign NC Number -->
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="logNC" target="assignNCNumber">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Assign NC Number to Notify Stakeholders -->
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="assignNCNumber" target="notifyStakeholders">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Notify Stakeholders to Document Evidence -->
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="notifyStakeholders" target="documentEvidence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Document Evidence to Initiate RCA -->
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="documentEvidence" target="initiateRCA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Initiate RCA to Gather Data -->
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="initiateRCA" target="gatherData">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Gather Data to Analyze Cause -->
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="gatherData" target="analyzeCause">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Analyze Cause to Apply 5 Why -->
+        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="analyzeCause" target="apply5Why">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Apply 5 Why to Fishbone Diagram -->
+        <mxCell id="e17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="apply5Why" target="fishboneDiagram">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Fishbone Diagram to Root Cause Identified -->
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="fishboneDiagram" target="rootCauseIdentified">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Root Cause Identified to Extend Analysis (No) -->
+        <mxCell id="e19" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="rootCauseIdentified" target="extendAnalysis">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Extend Analysis to Max Analysis Time -->
+        <mxCell id="e20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="extendAnalysis" target="maxAnalysisTime">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Max Analysis Time to Gather Data (No) -->
+        <mxCell id="e21" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="maxAnalysisTime" target="gatherData">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="100" y="1175" />
+              <mxPoint x="100" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Max Analysis Time to Escalate RCA (Yes) -->
+        <mxCell id="e22" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="maxAnalysisTime" target="escalateRCA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Escalate RCA to End Escalated -->
+        <mxCell id="e23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="escalateRCA" target="endEscalated">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Root Cause Identified to Document Root Cause (Yes) -->
+        <mxCell id="e24" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="rootCauseIdentified" target="documentRootCause">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Document Root Cause to Validate Root Cause -->
+        <mxCell id="e25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="documentRootCause" target="validateRootCause">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Validate Root Cause to Develop CAPA -->
+        <mxCell id="e26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="validateRootCause" target="developCAPA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Develop CAPA to Assign Owner -->
+        <mxCell id="e27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="developCAPA" target="assignOwner">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Assign Owner to Set Deadline -->
+        <mxCell id="e28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="assignOwner" target="setDeadline">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Set Deadline to Allocate Resources -->
+        <mxCell id="e29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="setDeadline" target="allocateResources">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Allocate Resources to Approve CAPA -->
+        <mxCell id="e30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="allocateResources" target="approveCAPA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Approve CAPA to Revise CAPA (No) -->
+        <mxCell id="e31" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="approveCAPA" target="reviseCAPA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Revise CAPA to Develop CAPA -->
+        <mxCell id="e32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="reviseCAPA" target="developCAPA">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="1630" />
+              <mxPoint x="800" y="1340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Approve CAPA to Implement CA (Yes) -->
+        <mxCell id="e33" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="approveCAPA" target="implementCA">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Implement CA to Monitor Progress -->
+        <mxCell id="e34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="implementCA" target="monitorProgress">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Monitor Progress to Document Actions -->
+        <mxCell id="e35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="monitorProgress" target="documentActions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Document Actions to Initiate Verification -->
+        <mxCell id="e36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="documentActions" target="initiateVerification">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Initiate Verification to Review Evidence -->
+        <mxCell id="e37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="initiateVerification" target="reviewEvidence">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Review Evidence to Test Effectiveness -->
+        <mxCell id="e38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="reviewEvidence" target="testEffectiveness">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Test Effectiveness to CA Effective -->
+        <mxCell id="e39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="testEffectiveness" target="caEffective">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- CA Effective to Identify Gaps (No) -->
+        <mxCell id="e40" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="caEffective" target="identifyGaps">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Identify Gaps to Revise CA Plan -->
+        <mxCell id="e41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="identifyGaps" target="reviseCAPlan">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Revise CA Plan to Implement CA -->
+        <mxCell id="e42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="reviseCAPlan" target="implementCA">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- CA Effective to Document Verification (Yes) -->
+        <mxCell id="e43" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="caEffective" target="documentVerification">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Document Verification to Update Procedures -->
+        <mxCell id="e44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="documentVerification" target="updateProcedures">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Update Procedures to Share Lessons -->
+        <mxCell id="e45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="updateProcedures" target="shareLessons">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Share Lessons to Close NC -->
+        <mxCell id="e46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="shareLessons" target="closeNC">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Close NC to Archive Records -->
+        <mxCell id="e47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="closeNC" target="archiveRecords">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Archive Records to Generate Report -->
+        <mxCell id="e48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="archiveRecords" target="generateReport">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Generate Report to Notify Closure -->
+        <mxCell id="e49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="generateReport" target="notifyClosure">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Notify Closure to End Closed -->
+        <mxCell id="e50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#333333;" edge="1" parent="1" source="notifyClosure" target="endClosed">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
