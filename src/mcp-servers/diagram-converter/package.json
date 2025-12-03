@@ -1,0 +1,30 @@
+{
+    "name": "@bmad/diagram-converter-mcp",
+    "version": "6.0.0-alpha.7",
+    "description": "MCP Server for Mermaid to Draw.io diagram conversion",
+    "type": "module",
+    "main": "index.js",
+    "bin": {
+        "diagram-converter-mcp": "./index.js"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "dev": "node --watch index.js"
+    },
+    "keywords": [
+        "mcp",
+        "mermaid",
+        "drawio",
+        "diagram",
+        "conversion",
+        "claude"
+    ],
+    "author": "BMAD",
+    "license": "MIT",
+    "dependencies": {
+        "@modelcontextprotocol/sdk": "^1.0.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
